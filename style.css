@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --white: #FFFFFF;
+    --devlinks-border: rgba(255, 255, 255, 0.50);;
+    --devlinks-background: rgba(255, 255, 255, 0.10);
+    --devlinks-background-onhover: rgba(255, 255, 255, 0.05);
+
+    --main-font: 'Inter', sans-serif;
+
+    --light-mode-switch: url(./assets/Switch.svg);
+    
+}
+
+body {
+    /*
+    background-image: url(assets/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover; 
+    */
+
+    /* background: color image repeat position/size */
+    background: url(assets/bg-mobile.svg) repeat-y top center/cover;
+
+    color: var(--white);
+
+    /* box-sizing: border-box; */
+}
+
+main {
+    border: 1px solid red;
+
+    max-width: 588px;
+    margin: 3em auto 0;
+    padding: 1.5em;
+}
+
+/* ------------------- */
+
+.profile {
+    text-align: center;
+}
+
+.profile p {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 0.875rem;
+
+    margin-top: 0.5rem;
+}
+
+/* ------------------- */
+
+.light-mode {
+    display: block;
+    text-align: center;
+    margin: 1.5em;
+}
+
+.light-mode label {
+   display: inline-block;
+    padding: 1.5em 0;
+    width: 6em;
+    background: var(--light-mode-switch) no-repeat center;
+}
+
+#light-mode-btn {
+    display: none;
+}
+
+/* ------------------- */
+
+.devlinks {
+    list-style-type: none;
+    text-align: center;
+}
+
+.devlinks li {
+    margin: 1em 0;
+    border: 1px solid red;
+}
+
+.devlinks a {
+    display: block;
+
+    text-decoration: none;
+    color: var(--white);
+    border: 1px solid var(--devlinks-border);
+    border-radius: 8px;
+    background: var(--devlinks-background);
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    padding: 1em;
+
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 1rem;
+
+    transition: background 0.2s;
+}
+
+.devlinks a:hover {
+    border: 1.5px solid var(--white);
+    background: var(--devlinks-background-onhover);
+}
