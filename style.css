@@ -35,7 +35,6 @@ body {
 }
 
 main {
-    border: 1px solid red;
 
     max-width: 588px;
     margin: 3em auto 0;
@@ -69,6 +68,7 @@ main {
     padding: 1.5em 0;
     width: 6em;
     background: var(--light-mode-switch) no-repeat center;
+    cursor: pointer;
 }
 
 #light-mode-btn {
@@ -84,7 +84,6 @@ main {
 
 .devlinks li {
     margin: 1em 0;
-    border: 1px solid red;
 }
 
 .devlinks a {
@@ -110,4 +109,24 @@ main {
 .devlinks a:hover {
     border: 1.5px solid var(--white);
     background: var(--devlinks-background-onhover);
+}
+
+/*Social Links*/
+.social-links {
+    display: flex;
+    font-size: 28px;
+    margin: 2em 0;
+    justify-content: center;
+    gap: 8%;
+    
+}
+
+/*Made by*/
+.made-by {
+    font-family: var(--main-font);
+    text-align: center;
+}
+
+.made-by a {
+    color: var(--white);
 }
