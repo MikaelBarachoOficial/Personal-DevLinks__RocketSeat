@@ -14,33 +14,40 @@
             <p>@mikael_baracho</p>
         </div>
 
-        <div class="light-mode">
-            <label for="light-mode-btn"></label>
-            <input type="checkbox" id="light-mode-btn">
+        <div id="switch-theme">
+            <button></button>
+            <span></span>
         </div>
 
         <ul class="devlinks">
-            <li><a href="">Inscreva-se no NLW</a></li>
-            <li><a href="">Baixe meu e-book</a></li>
-            <li><a href="">Veja meu portfólio</a></li>
-            <li><a href="">Conheça o Explorer</a></li>
+            <li><a href="" target="_blank">Inscreva-se no NLW</a></li>
+            <li><a href="" target="_blank">Baixe meu e-book</a></li>
+            <li><a href="" target="_blank">Veja meu portfólio</a></li>
+            <li><a href="" target="_blank">Conheça o Explorer</a></li>
         </ul>
 
         <div class="social-links">
-            <ion-icon name="logo-youtube"></ion-icon>
-            <ion-icon name="logo-instagram"></ion-icon>
-            <ion-icon name="logo-tiktok"></ion-icon>
-            <ion-icon name="logo-linkedin"></ion-icon>
-            <ion-icon name="logo-github"></ion-icon>
+            <a href="" target="_blank">
+                <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+            <a href="" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="" target="_blank">
+                <ion-icon name="logo-tiktok"></ion-icon>
+            </a>
+            <a href="" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
         </div>
 
-        <p class="made-by">Made with <ion-icon name="heart"></ion-icon> by <a href="https://www.instagram.com/mikael_baracho/">myself</a></p>
+        <p class="made-by">Made with <ion-icon name="heart"></ion-icon> by <a href="https://www.instagram.com/mikael_baracho/" target="_blank">myself</a></p>
     </main>
 
-    <script>
-        // Click Test
-        document.getElementById('light-mode-btn').addEventListener('click', () => console.log('Clicked!'))
-    </script>
+    <script src="light-mode.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
