@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration:;
 }
 
 :root {
@@ -53,6 +54,8 @@ body {
 
     /* box-sizing: border-box; */
     transition: all 0.1s;
+
+    height: 100vh;
 }
 
 main {

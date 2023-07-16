@@ -1,22 +1,22 @@
 if (localStorage.getItem('light-mode') === 'on') {
-    changeTheme()
+    document.body.classList.toggle('light-mode')
 }
 
 document.querySelector('#switch-theme').addEventListener('click', () => {
 
-    changeTheme()
+    document.body.classList.toggle('light-mode')
+    localStorageUpdates()
 
 })
 
-function changeTheme () {
+
+function localStorageUpdates () {
     
     if (!document.body.classList.contains("light-mode")) {
-        localStorage.setItem('light-mode', 'on')
-        document.body.classList.add('light-mode')
+        localStorage.setItem('light-mode', 'off')
        
     } else {
-        localStorage.setItem('light-mode', 'off')
-        document.body.classList.remove('light-mode')
+        localStorage.setItem('light-mode', 'on')
         
     }
 }
