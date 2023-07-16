@@ -3,7 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration:;
 }
 
 :root {
@@ -84,6 +83,7 @@ main {
     position: relative;
     width: 70px;
     margin: 1.2em auto;
+
 }
 
 #switch-theme button {
@@ -100,11 +100,16 @@ main {
     
     top: 50%;
     transform: translateY(-50%);
+
+    animation: switch-theme_slide-out 0.25s;
+
 }
 
 .light-mode #switch-theme button {
-    left: initial;
-    right: 0;
+    /* left: initial;
+    right: 0; */
+
+    animation: swith-theme_slide-in 0.25s forwards;
 }
 
 #switch-theme span {
@@ -185,6 +190,7 @@ main {
     color: var(--white);
 }
 
+/* Media Queries*/
 @media screen and (min-width: 433px){
 
     .social-links {
@@ -213,3 +219,29 @@ main {
         background-image: var(--background-desktop);
     }
 }
+
+/* Animation */
+
+@keyframes swith-theme_slide-in {
+    
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 52%;
+    }
+
+}
+
+@keyframes switch-theme_slide-out {
+
+    from {
+        left: 52%
+    }
+
+    to {
+        left: 0
+    }
+
+} 
