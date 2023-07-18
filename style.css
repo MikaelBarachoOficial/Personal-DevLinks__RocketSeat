@@ -60,7 +60,7 @@ body {
 main {
 
     max-width: 588px;
-    margin: 2em auto 0;
+    margin: 1em auto 0;
     padding: 1.5em;
 }
 
@@ -134,6 +134,8 @@ main {
 .devlinks {
     list-style-type: none;
     text-align: center;
+    
+    margin-bottom: 2em;
 }
 
 .devlinks li {
@@ -167,14 +169,23 @@ main {
 
 /*Social Links*/
 .social-links {
+    text-align: center;
+    margin-top: 2em;
+
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.social-links div{
     display: flex;
-    font-size: 28px;
-    margin: 1em 0;
+    font-size: 35px;
+    margin: 0.7em 0em;
     justify-content: center;
     gap: 9%;
 }
 
-.social-links a {
+.social-links div a {
 
     color: var(--white);
     
@@ -193,11 +204,11 @@ main {
 /* Media Queries*/
 @media screen and (min-width: 433px){
 
-    .social-links {
+    .social-links div{
         gap: 0;
     }
     
-    .social-links a {
+    .social-links div a {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -208,7 +219,7 @@ main {
         transition: background 0.2s;
     }
     
-    .social-links a:hover {
+    .social-links div a:hover {
         background: var(--background-social-links-hover) ;
     }
 
